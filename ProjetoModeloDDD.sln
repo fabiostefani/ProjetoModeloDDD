@@ -3,8 +3,39 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{B8A51852-4B23-49E4-A438-350BD226BE3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{A0349B11-8B16-47A4-AA49-B5C4B21A40AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{E5093C1A-2E98-4825-AE5A-92876BE354D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{D2DFD908-8D1C-4E2D-82D1-ADA1E91EBF18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{73A95AC8-9B73-47AE-93FE-1783345874B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Dados", "4.1 - Dados", "{F81C464D-BBF8-4D76-97FD-8F34ABA2F762}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{09344092-9E62-4F4B-98F6-65784AF68911}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoModeloDDD.MVC", "ProjetoModeloDDD.MVC\ProjetoModeloDDD.MVC.csproj", "{84A2D4DA-E695-4241-9CBC-1A4C7F51123D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84A2D4DA-E695-4241-9CBC-1A4C7F51123D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84A2D4DA-E695-4241-9CBC-1A4C7F51123D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84A2D4DA-E695-4241-9CBC-1A4C7F51123D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84A2D4DA-E695-4241-9CBC-1A4C7F51123D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F81C464D-BBF8-4D76-97FD-8F34ABA2F762} = {73A95AC8-9B73-47AE-93FE-1783345874B1}
+		{09344092-9E62-4F4B-98F6-65784AF68911} = {73A95AC8-9B73-47AE-93FE-1783345874B1}
+		{84A2D4DA-E695-4241-9CBC-1A4C7F51123D} = {B8A51852-4B23-49E4-A438-350BD226BE3D}
 	EndGlobalSection
 EndGlobal
