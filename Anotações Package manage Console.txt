@@ -1,0 +1,14 @@
+* Instalação Entity Framework
+> Install-Package EntityFramework
+
+* Habilitar migrations no banco de dados
+> enable-Migrations
+Após habilitar o migration, é criado uma pasta no projeto Infra.Data com nome de migrations;
+Nessa pasta, tem um arquigo Configuration. Deve ser atualizado a propriedade AutomaticMigrationsEnabled para true para que seja atualizado o modelo automaticamente.
+
+* Criar estrutura do banco de dados
+> update-database -Verbose
+
+
+ProjetoModeloContext
+OnModelCreating, defino alguns padrões para migração do banco de dados.
