@@ -37,6 +37,7 @@ namespace ProjetoModeloDDD.Infra.Data.Repositories
         public void Update(TEntity obj)
         {
             Db.Entry(obj).State = EntityState.Modified;
+            Db.SaveChanges();
         }
 
         public void Dispose()
