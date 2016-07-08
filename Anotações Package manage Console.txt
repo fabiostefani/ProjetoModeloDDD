@@ -12,3 +12,17 @@ Nessa pasta, tem um arquigo Configuration. Deve ser atualizado a propriedade Aut
 
 ProjetoModeloContext
 OnModelCreating, defino alguns padrões para migração do banco de dados.
+
+*Instalação automapper
+> Install-Package AutoMapper
+
+
+
+
+---------------------------
+Microsoft Visual Studio
+---------------------------
+Unable to start debugging. The startup project could not be launched. Verify debug settings for the startup project.
+---------------------------
+OK   
+---------------------------
