@@ -20,6 +20,8 @@ namespace ProjetoModeloDDD.Infra.Data.Contexto
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+
+            //modelBuilder.HasDefaultSchema("public");
             //base.OnModelCreating(modelBuilder);
 
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>(); // Não plurlizar as tabelas

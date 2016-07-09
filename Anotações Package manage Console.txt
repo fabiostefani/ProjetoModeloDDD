@@ -17,12 +17,30 @@ OnModelCreating, defino alguns padrões para migração do banco de dados.
 > Install-Package AutoMapper
 
 
+* Instalçao Ninject
+> Install-Package Ninject.MVC5
 
+* Configuraçãoa acesso Postgres
+> deve instalar o framework no postgres na camada de dados
+Install-Package Npgsql.EntityFramework
 
----------------------------
-Microsoft Visual Studio
----------------------------
-Unable to start debugging. The startup project could not be launched. Verify debug settings for the startup project.
----------------------------
-OK   
----------------------------
+> adicionar a linha de conexão no webconfig
+<!--<add name="ProjetoModeloDDD" connectionString="Server=127.0.0.1;Database=ProjetoModeloDB; User Id=postgres;Password=123456;" providerName="Npgsql" />-->
+
+>Conferir linhas de conexão do entityframework no web.config
+<entityFramework>
+    <defaultConnectionFactory type="System.Data.Entity.Infrastructure.SqlConnectionFactory, EntityFramework" />    
+    <providers>
+      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+      <provider invariantName="Npgsql" type="Npgsql.NpgsqlServices, Npgsql.EntityFramework" />
+    </providers>
+  </entityFramework>
+
+> Adicionar linhas de conexão do system.data  para conexão com o postgres
+<system.data>
+    <DbProviderFactories>
+      <add name="Npgsql Data Provider" invariant="Npgsql"
+      support="FF" description=".Net Framework Data Provider for Postgresql"
+      type="Npgsql.NpgsqlFactory, Npgsql" />
+    </DbProviderFactories>
+  </system.data>
